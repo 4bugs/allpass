@@ -20,5 +20,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^password/', include('password.urls')),
     url(r'^user/', include('user_profile.urls')),
+    url(r'^account/', include('accounts.urls')),
     url(r'^admin/', admin.site.urls),
+    url('^', include('django.contrib.auth.urls')),
 ]
