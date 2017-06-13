@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+<head>
+  <title>{{ userprofile.username }}</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+
+<body>
+  <h2>Username: {{ userprofile.username }}</h2>
+  <h2>Email: {{ userprofile.email }}</h2>
+  <h2>Joined: {{ userprofile.joined }}</h2>
+  <h2>Active: {{ userprofile.is_active }}</h2>
+  <h2>Admin: {{ userpfofile.is_admin }}</h2>
+</body>
+</html>
+
